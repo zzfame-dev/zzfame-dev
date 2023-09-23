@@ -1,0 +1,30 @@
+Steps to Committing a Pipeline on GitHub Actions:
+
+Step 1: Access the GitHub Repository
+Ensure that you possess the necessary permissions to modify the GitHub repository where you intend to commit the pipeline.
+
+Step 2: Create a Workflow YAML File
+ * Navigate to the root of your GitHub repository.
+ * If it does not already exist, establish a new directory called '.github'.
+ * Inside the '.github' directory, construct a subdirectory named 'workflows'.
+ * Within the 'workflows' directory, craft a YAML file with a descriptive name (e.g., 'sampleDemo.yml'). This file shall delineate your pipeline.
+ * Specify the workflow within the YAML file. A typical GitHub Actions workflow encompasses:
+ * Trigger events (e.g., pushes to specific branches).
+ * Tasks, stages, and actions to execute (e.g., building, testing, deploying).
+ * Environment variables and confidential information.
+ * Ensure that the YAML file adheres to GitHub Actions' syntax. Reference GitHub's Actions documentation for guidance.
+
+Step 3: Commit and Push the YAML File 
+ * Preserve the YAML file.
+ * Commit the file to your local Git repository by using Git commands or a Git client.
+ * Push the alterations to the remote GitHub repository. This will initiate the pipeline for the initial time.
+
+Step 4: Monitor Workflow Execution 
+ * Access the "Actions" tab in your GitHub repository to oversee the status and advancement of the workflow.
+ * GitHub Actions will automatically enact the specified workflow whenever the designated trigger events transpire (e.g., code pushes).
+ * Scrutinize the workflow logs and identify any potential challenges that surface during execution.
+
+Step 5: Iterate and Enhance 
+ * Persistently iterate on your workflow as required, implementing enhancements grounded on feedback and shifting project requisites.
+ * Modify the YAML file within the '.github/workflows' directory and push the modifications to the repository to effectuate updates to the pipeline.
+
